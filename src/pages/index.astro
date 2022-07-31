@@ -1,24 +1,61 @@
 ---
 import Base from "../layouts/base_layout.astro";
 ---
+
 <Base>
-	<div>
-		<div class="m-10 text-2xl flex justify-between items-center">
-			<div>
-				<h1 class="font-medium text-white">Christian Glassiognon,</h1>
-				<h1 class="font-medium text-green-500">Software Engineer</h1> 
-			</div>
-			<div class="flex justify-evenly w-80 text-3xl text-white">
-				<div class="w-16 h-16 border-white border-2 rounded-sm flex items-center justify-center">
-					<i class="fa-brands fa-twitter"></i>
-				</div>
-				<div class="w-16 h-16 border-white border-2 rounded-sm flex items-center justify-center">
-					<i class="fa-brands fa-github"></i>
-				</div>
-				<div class="w-16 h-16 border-white border-2 rounded-sm flex items-center justify-center">
-					<i class="fa-brands fa-linkedin"></i>
-				</div>
-			</div>
-		</div>
-	</div>
-</Base>	
+<div class="h-screen w-screen flex justify-center items-center">
+	<svg viewBox="0 0 500 500" class="w-1/4">
+		<!-- <circle id="test" cx="50" cy="50" r="20" fill="none" stroke="white" stroke-width="2" /> -->
+		<!-- <path id="test" fill="none" stroke="red"
+			d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50" /> -->
+
+		<defs>
+
+			<path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" fill="none"
+				id="test">
+				<animateTransform attributeName="transform" begin="0s" dur="25s" type="rotate" from="360 250 250"
+					to="0 250 250" repeatCount="indefinite" />
+			</path>
+
+			<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520">
+				<defs>
+					<style>
+						.cls-1 {
+							fill: none;
+							stroke: #e5e5e5;
+							stroke-miterlimit: 10;
+							stroke-width: 14px;
+						}
+					</style>
+				</defs>
+				<g id="Layer_1-2">
+					<g>
+						<path class="cls-1"
+							d="M510,259.44c-.09-14.65-11.98-26.49-26.64-26.49h-223.77c-14.72,0-26.65,11.93-26.65,26.65v.8c0,14.72,11.93,26.65,26.65,26.65h196.3v128.29c-45.79,57.67-116.52,94.66-195.89,94.66-138.07,0-250-111.93-250-250S121.93,10,260,10s249.7,111.63,250,249.44Z" />
+						<path class="cls-1"
+							d="M259.59,287.05h108.57c-12.09,48.47-55.93,84.38-108.16,84.38-61.56,0-111.47-49.89-111.47-111.43s49.91-111.44,111.47-111.44c52.23,0,96.07,35.92,108.16,84.39h-108.57c-14.72,0-26.65,11.93-26.65,26.65v.8c0,14.72,11.93,26.65,26.65,26.65Z" />
+						<path class="cls-1"
+							d="M510,260.56v222.71c0,14.71-11.93,26.64-26.64,26.64h-.83c-14.71,0-26.64-11.93-26.64-26.64v-196.22h27.47c14.66,0,26.55-11.84,26.64-26.49Z" />
+						<path class="cls-1"
+							d="M510,259.44v1.12c-.09,14.65-11.98,26.49-26.64,26.49h-223.77c-14.72,0-26.65-11.93-26.65-26.65v-.8c0-14.72,11.93-26.65,26.65-26.65h223.77c14.66,0,26.55,11.84,26.64,26.49Z" />
+					</g>
+				</g>
+			</svg>
+
+
+
+		</defs>
+
+
+		<text>
+			<textPath fill="white" href="#test" textLength="1230" class="text-4xl">
+				CHRISTIAN GLASSIOGNON •
+				SOFTWARE ENGINEER •
+			</textPath>
+		</text>
+		<use href="#Layer_2" width="250px" height="250px" x="122.5" y="120" />
+
+
+	</svg>
+</div>
+</Base>

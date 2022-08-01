@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
     html {
-        font-family: "Inter", system-ui, serif;
-        background-color: #191919;
+        font-family: "Padauk", system-ui, serif;
+        background-color: #020c00;
     }
 }
